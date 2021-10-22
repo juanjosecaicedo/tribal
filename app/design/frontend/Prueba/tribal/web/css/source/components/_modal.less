@@ -1,0 +1,28 @@
+& when (@media-common = true) {
+    .cms-home {
+        .modal-bienvenido {
+            .modal-header {
+                text-align: center;
+                .action-close {
+                    height: 30px;
+                    background: @button-primary__background;
+                    border-radius: 50%;
+                    width: 30px;
+                    text-align: center;
+                    &::before {
+                        padding-top: 2px;
+                        color: white;
+                    }
+                }
+            }
+            .modal-footer {
+                padding-bottom: 1rem;
+                padding-top: 1rem;
+            }
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    
+}
